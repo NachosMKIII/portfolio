@@ -1,25 +1,13 @@
-"use client";
-
+//FantasyHeader.jsx
 import { useState } from "react";
 import { Menu, Moon, Sun, Sparkles } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 export default function FantasyHeader() {
   const [isDark, setIsDark] = useState(true);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeNav, setActiveNav] = useState("");
 
-  const navItems = ["Grimoire", "Quests", "Artifacts", "Spells"];
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    console.log(`Switched to ${!isDark ? "dark" : "light"} theme`);
-  };
-
-  const handleNavClick = (item) => {
-    setActiveNav(item);
-    setIsMobileMenuOpen(false);
-    console.log(`Navigating to: ${item}`);
-  };
+  const navItems = ["About Me", "Projects"];
 
   return (
     <header className="relative mb-6">
@@ -33,7 +21,6 @@ export default function FantasyHeader() {
             "inset 0 0 20px 5px rgba(79, 70, 229, 0.2), 0 0 15px rgba(79, 70, 229, 0.3)",
         }}
       />
-
       {/* Main Header Content */}
       <div
         className="relative z-10 bg-slate-900/95 rounded-lg p-4"
@@ -52,11 +39,11 @@ export default function FantasyHeader() {
 
             <div>
               <h1 className="text-2xl font-cinzel font-bold text-purple-200 tracking-wider">
-                Mystical Realms
+                Ricardo Morais Lucas
               </h1>
               <div className="h-0.5 bg-gradient-to-r from-transparent via-purple-500/70 to-transparent"></div>
               <p className="text-xs text-slate-400 mt-0.5 font-crimson italic">
-                Chronicles of the Arcane
+                Junior frontend developer
               </p>
             </div>
           </div>
@@ -65,30 +52,30 @@ export default function FantasyHeader() {
           <nav className="flex items-center gap-1 md:gap-2">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-2">
-              {navItems.map((item) => (
-                <button
-                  key={item}
-                  onClick={() => handleNavClick(item)}
-                  className={`px-3 py-1.5 text-sm font-crimson transition-all duration-300 relative group ${
-                    activeNav === item
-                      ? "text-purple-300"
-                      : "text-slate-300 hover:text-purple-300"
-                  }`}
-                  style={{
-                    textShadow:
-                      activeNav === item
+              {navItems.map((item) => {
+                const path = `/${item.replace(" ", "")}`;
+                return (
+                  <NavLink
+                    key={item}
+                    to={path}
+                    className={({ isActive }) =>
+                      `px-3 py-1.5 text-xl font-crimson transition-all duration-300 relative group ${
+                        isActive
+                          ? "text-purple-300 active"
+                          : "text-slate-300 hover:text-purple-300"
+                      }`
+                    }
+                    style={({ isActive }) => ({
+                      textShadow: isActive
                         ? "0 0 10px rgba(139, 92, 246, 0.8)"
                         : "",
-                  }}
-                >
-                  {item}
-                  <span
-                    className={`absolute bottom-0 left-0 h-0.5 bg-purple-500 transition-all duration-300 ${
-                      activeNav === item ? "w-full" : "w-0 group-hover:w-full"
-                    }`}
-                  ></span>
-                </button>
-              ))}
+                    })}
+                  >
+                    {item}
+                    <span className="absolute bottom-0 left-0 h-0.5 bg-purple-500 transition-all duration-300 w-0 group-hover:w-full group-[.active]:w-full"></span>
+                  </NavLink>
+                );
+              })}
             </div>
 
             {/* Mobile Menu Button */}
@@ -100,16 +87,7 @@ export default function FantasyHeader() {
             </button>
 
             {/* Theme Toggle Button */}
-            <button
-              onClick={toggleTheme}
-              className="ml-2 p-1.5 bg-slate-800 border border-purple-900/50 rounded-full text-slate-300 hover:text-purple-300 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20"
-            >
-              {isDark ? (
-                <Moon className="w-4 h-4" />
-              ) : (
-                <Sun className="w-4 h-4" />
-              )}
-            </button>
+            {/* Add theme toggle button here if needed */}
           </nav>
         </div>
 
@@ -117,19 +95,25 @@ export default function FantasyHeader() {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pt-4 border-t border-purple-900/30">
             <div className="flex flex-col space-y-2">
-              {navItems.map((item) => (
-                <button
-                  key={item}
-                  onClick={() => handleNavClick(item)}
-                  className={`text-left px-3 py-2 text-sm font-crimson transition-colors rounded ${
-                    activeNav === item
-                      ? "text-purple-300 bg-purple-900/20"
-                      : "text-slate-300 hover:text-purple-300 hover:bg-purple-900/10"
-                  }`}
-                >
-                  {item}
-                </button>
-              ))}
+              {navItems.map((item) => {
+                const path = `/${item.replace(" ", "")}`;
+                return (
+                  <NavLink
+                    key={item}
+                    to={path}
+                    className={({ isActive }) =>
+                      `text-left px-3 py-2 text-sm font-crimson transition-colors rounded ${
+                        isActive
+                          ? "text-purple-300 bg-purple-900/20"
+                          : "text-slate-300 hover:text-purple-300 hover:bg-purple-900/10"
+                      }`
+                    }
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item}
+                  </NavLink>
+                );
+              })}
             </div>
           </div>
         )}
@@ -138,14 +122,6 @@ export default function FantasyHeader() {
       {/* Decorative Elements */}
       <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1">
         <div className="h-full bg-gradient-to-r from-transparent via-purple-500/70 to-transparent"></div>
-      </div>
-
-      {/* Corner Ornaments */}
-      <div className="absolute -top-2 -left-2 w-6 h-6 bg-indigo-900 rounded-full border-2 border-purple-700 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-        <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-      </div>
-      <div className="absolute -top-2 -right-2 w-6 h-6 bg-indigo-900 rounded-full border-2 border-purple-700 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-        <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
       </div>
     </header>
   );
