@@ -2,6 +2,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
@@ -16,8 +17,8 @@ const App = () => {
       </div>
       <div className="flex h-full">
         <AboutMe />
-        <div className="flex items-center justify-center h-full border-2 border-gray-950"></div>
-        <AboutMe />
+        <div className="flex items-center justify-center h-full border-2 border-neutral-950"></div>
+        <Projects />
       </div>
     </div>
   );
