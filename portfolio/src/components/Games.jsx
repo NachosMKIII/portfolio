@@ -30,29 +30,67 @@ const Games = () => {
           className="flex gap-4 overflow-x-hidden no-scrollbar"
           ref={scrollRef}
         >
-          <img
-            src="/kenshi.jpeg"
+          <a
             href="https://en.wikipedia.org/wiki/Kenshi_(video_game)"
-            className="w-44 mt-4 mb-4 h-52 cursor-pointer"
-          />
-
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 mb-2"
+          >
+            <img
+              src="/kenshi.jpeg"
+              href="https://en.wikipedia.org/wiki/Kenshi_(video_game)"
+              className="w-40 mt-4 mb-4 h-52 cursor-pointer"
+            />
+          </a>
           <a
             href="https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim"
             target="_blank"
             rel="noopener noreferrer"
+            className="flex-shrink-0 mb-2"
           >
-            <img src="/skyrim.png" className="w-44 mt-4 h-52" />
+            <img src="/skyrim.png" className="w-40 h-52 mb-4 mt-4" />
           </a>
-          <img
-            src="/stardew-valley.jpeg"
-            className="w-44 mt-4 h-52 cursor-pointer"
-          />
-          <img src="/termina.jpeg" className="w-44 mt-4 h-52 cursor-pointer" />
-          <img
-            src="/ultrakill.webp"
-            className="w-44 mt-4 h-52 cursor-pointer"
-          />
-          <img src="/dmc.jpg" className="w-44 mt-4 h-52 cursor-pointer" />
+          <a
+            href="https://en.wikipedia.org/wiki/Stardew_Valley"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 mb-2"
+          >
+            <img
+              src="/stardew-valley.jpeg"
+              className="w-40 mt-4 h-52 cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/Fear_%26_Hunger#Fear_&_Hunger_2:_Termina"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 mb-2"
+          >
+            <img
+              src="/termina.jpeg"
+              className="w-40 mt-4 h-52 cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/Ultrakill"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 mb-2"
+          >
+            <img
+              src="/ultrakill.webp"
+              className="w-40 mt-4 h-52 cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://en.wikipedia.org/wiki/Devil_May_Cry_3:_Dante%27s_Awakening"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 mb-2"
+          >
+            <img src="/dmc3.jpg" className="w-40 mt-4 h-52 cursor-pointer" />
+          </a>
         </div>
         <button
           onClick={() => scroll("right")}

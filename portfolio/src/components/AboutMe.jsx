@@ -12,25 +12,30 @@ const AboutMe = () => {
       <div
         className={`bg-neutral-900 ml-12 mt-20 rounded ${
           isExpanded
-            ? "w-100 h-100 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]"
-            : "w-30 h-10"
+            ? "w-100 h-200 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]"
+            : "w-40 h-14"
         } overflow-hidden transition-all transition-discrete duration-700 bold text-neutral-200`}
       >
         <h1
-          className="bg-neutral-950 pl-3 pt-2 pb-2 rounded cursor-pointer"
+          className="bg-neutral-950 pl-3 text-3xl pt-2 h-14 rounded cursor-pointer"
           onClick={toggleExpand}
         >
           About Me
         </h1>
-        <p className="p-2 pt-3 mb-10">
+
+        <p className="p-2 pt-3 mb-3 text-lg">
           I'm a junior software developer from Brazil, i'm currently in my last
           year of high school and i'm looking forward to getting in the tech
           industry with a part-time job or internship, i have been studying
           programming for over a year now and i'm very eager to learn more and
           grow my skills.
-          <br />
-          <br />
         </p>
+        <p className="text-xl p-2">Hobbies:</p>
+        <p className="text-lg p-2">
+          I like videogames and music(so original btw), the type of games i like
+          is mainly RPG but i also like some hack-slash or adventure games
+        </p>
+        <p className="text-lg p-2">As for what kind of music i like, it</p>
       </div>
     </div>
   );
