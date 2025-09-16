@@ -21,9 +21,10 @@ const Projects = () => {
   return (
     <div className="w-[50vw] flex">
       <div
-        className={`bg-neutral-900 ml-12 mt-20 rounded ${
-          isExpanded ? "w-130" : "w-30 h-10"
-        } overflow-hidden transition-all transition-discrete duration-700 bold text-slate-200`}
+        className={`bg-neutral-900 projects ml-12 mt-20 rounded ${
+          isExpanded ? "w-130 h-150" : "w-30 h-10"
+        } overflow-hidden transition-all transition-discrete duration-700 bold text-neutral-200
+        `}
       >
         <h1
           className="bg-neutral-950 pl-3 pt-2 pb-2 h-11 mb-0 rounded cursor-pointer"
