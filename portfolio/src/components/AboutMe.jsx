@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const AboutMe = () => {
-  let [isExpanded, setIsExpanded] = useState(false);
+  let [isExpanded, setIsExpanded] = useState(true);
 
   function toggleExpand() {
     setIsExpanded(!isExpanded);

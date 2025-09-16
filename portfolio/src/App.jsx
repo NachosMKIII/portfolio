@@ -29,7 +29,7 @@ const App = () => {
           <AboutMe />
           <Games />
         </div>
-        <div className="flex items-center justify-center h-full border-2 border-neutral-950"></div>
+        <div className="flex items-center justify-center h-[110vh] border-2 border-neutral-950"></div>
         <Projects />
       </div>
       <style>

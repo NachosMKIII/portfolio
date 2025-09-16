@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Projects = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   const [index, setIndex] = useState(0);
 
   function toggleExpand() {
