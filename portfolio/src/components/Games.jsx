@@ -7,12 +7,12 @@ const Games = () => {
         Games i like
       </h1>
       <div className="flex gap-4 w overflow-hidden w-[48vw]">
-        <img src="/termina.jpeg" className="w-40 mt-4 mb-4 h-52 ml-12" />
-        <img src="/termina.jpeg" className="w-40 mt-4 h-52" />
-        <img src="/termina.jpeg" className="w-40 mt-4 h-52" />
-        <img src="/termina.jpeg" className="w-40 mt-4 h-52" />
-        <img src="/termina.jpeg" className="w-40 mt-4 h-52" />
-        <img src="/termina.jpeg" className="w-40 mt-4 h-52" />
+        <img src="/termina.jpeg" className="w-44 mt-4 mb-4 h-52 ml-12" />
+        <img src="/termina.jpeg" className="w-44 mt-4 h-52" />
+        <img src="/termina.jpeg" className="w-44 mt-4 h-52" />
+        <img src="/termina.jpeg" className="w-44 mt-4 h-52" />
+        <img src="/termina.jpeg" className="w-44 mt-4 h-52" />
+        <img src="/termina.jpeg" className="w-44 mt-4 h-52" />
       </div>
     </div>
   );
