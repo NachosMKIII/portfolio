@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const Games = () => {
+const Albums = () => {
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
@@ -103,4 +103,4 @@ const Games = () => {
   );
 };
 
-export default Games;
+export default Albums;

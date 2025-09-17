@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Games from "./components/Games";
+import Albums from "./components/Albums";
 
 const App = () => {
   const scrollbarConfig = {
@@ -28,6 +29,7 @@ const App = () => {
         <div>
           <AboutMe />
           <Games />
+          <Albums />
         </div>
         <div className="flex items-center justify-center h-[110vh] border-2 border-neutral-950"></div>
         <Projects />
