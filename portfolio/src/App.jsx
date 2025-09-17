@@ -31,7 +31,7 @@ const App = () => {
           <Games />
           <Albums />
         </div>
-        <div className="flex items-center justify-center h-[110vh] border-2 border-neutral-950"></div>
+        <div className="flex items-center justify-center h-[215vh] border-2 border-neutral-950"></div>
         <Projects />
       </div>
       <style>
@@ -41,11 +41,9 @@ const App = () => {
         }
         .custom-scrollbar::-webkit-scrollbar-track {
           background: ${scrollbarConfig.trackColor};
-          border-radius: 6px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
           background: ${scrollbarConfig.thumbColor};
-          border-radius: 6px;
           border: 2px solid ${scrollbarConfig.trackColor};
         }
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {

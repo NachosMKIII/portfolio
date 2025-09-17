@@ -3,6 +3,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Games = () => {
   const scrollRef = useRef(null);
+  const scrollbarConfig = {
+    trackColor: "#0a0a0a",
+    thumbColor: "#171717",
+    thumbHover: "#171717",
+    thumbActive: "#171717",
+  };
 
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -16,7 +22,7 @@ const Games = () => {
 
   return (
     <div className=" w-[50vw]">
-      <h1 className="ml-12 mt-5 w-54 text-xl rounded-full bg-neutral-950 p-2 px-6 text-neutral-200">
+      <h1 className="ml-12 mt-5 w-54 text-xl rounded-full bg-neutral-950 p-2 pb-3 px-6 text-neutral-200">
         Games i really like
       </h1>
       <div className="flex gap-4 ml-2 w-[49vw] mt-4">
@@ -27,7 +33,7 @@ const Games = () => {
           <ChevronLeft className="text-neutral-200" />
         </button>
         <div
-          className="flex gap-4 overflow-x-auto scrollbar-hide"
+          className="flex gap-4 overflow-x-auto custom-scrollbar"
           ref={scrollRef}
         >
           <a
@@ -99,6 +105,27 @@ const Games = () => {
           <ChevronRight className=" text-neutral-200" />
         </button>
       </div>
+      <style>
+        {`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 18px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: ${scrollbarConfig.trackColor};
+          border-radius: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: ${scrollbarConfig.thumbColor};
+          border-radius: 6px;
+          border: 2px solid ${scrollbarConfig.trackColor};
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: ${scrollbarConfig.thumbHover};
+        }
+        .custom-scrollbar-cozy::-webkit-scrollbar-thumb:active {
+          background: ${scrollbarConfig.thumbActive};
+        }`}
+      </style>
     </div>
   );
 };
