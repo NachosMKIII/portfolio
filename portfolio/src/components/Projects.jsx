@@ -57,11 +57,23 @@ const Projects = () => {
             and run it yourself (or also just watch the video above if you want
             to have an idea of what project is like)
           </p>
-          <p className="p-2 text-xl">About the project</p>
+          <h1 className="p-2 text-xl">About the project</h1>
           <p className="p-2 text-lg">
-            It's a music player web app built using NextJS(it was for making
-            token storing safe before i knew that the spotify dodumentation was
-            updated) and therefore{" "}
+            It's a music player web app that uses the spotify API for
+            authentication and viewing and playing songs
+            <br></br>
+            It was built using NextJS(it was for making token storing safe
+            before i knew that the spotify dodumentation was updated) and
+            therefore React, on top of that i also used tailwind for
+            easy-to-read default styling across all themes
+          </p>
+          <h1 className="p-2 pt-3 text-xl">Features: </h1>
+          <p className="p-2 text-lg">
+            You can play songs
+            <br></br>
+            There is a player UI for you to control the track you are playing
+            <br></br>
+            You can create custom playlists that are stored locally
           </p>
         </div>
       </div>

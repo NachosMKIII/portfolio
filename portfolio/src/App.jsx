@@ -10,8 +10,8 @@ const App = () => {
   const scrollbarConfig = {
     trackColor: "#0a0a0a",
     thumbColor: "#171717",
-    thumbHover: "#171717",
-    thumbActive: "#171717",
+    thumbHover: "#404040",
+    thumbActive: "#404040",
   };
 
   return (

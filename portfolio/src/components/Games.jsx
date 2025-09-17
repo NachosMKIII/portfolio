@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Games = () => {
   const scrollRef = useRef(null);
+  //this config gets overwritten by the one in App.jsx
   const scrollbarConfig = {
     trackColor: "#0a0a0a",
     thumbColor: "#171717",
