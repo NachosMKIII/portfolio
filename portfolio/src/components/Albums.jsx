@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Albums = () => {
   const scrollRef = useRef(null);
+  const [isExpanded, setIsExpanded] = useState(true);
+
+  //this config gets overwritten by the one in App.jsx
   const scrollbarConfig = {
     trackColor: "#0a0a0a",
     thumbColor: "#171717",
@@ -22,10 +25,22 @@ const Albums = () => {
 
   return (
     <div className=" w-[50vw]">
-      <h1 className="ml-12 mt-5 w-125 line-clamp-2 text-xl rounded-full bg-neutral-950 p-2 pb-3 px-6 text-neutral-200">
+      <h1
+        className={`ml-12 mt-5 text-xl rounded-full bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer
+         ${
+           isExpanded
+             ? "w-125"
+             : "opacity-70 w-[18ch] whitespace-nowrap overflow-hidden"
+         }`}
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
         Albums i really like (from bands/artists i really like)
       </h1>
-      <div className="flex gap-4 ml-2 w-[49vw] mt-4">
+      <div
+        className={`flex gap-4 ml-2 w-[49vw] mt-4 ${
+          isExpanded ? null : "hidden hide-scrollbar"
+        }`}
+      >
         <button
           onClick={() => scroll("left")}
           className="bg-neutral-950 cursor-pointer w-10 h-10 rounded-full relative top-25"

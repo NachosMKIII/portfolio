@@ -35,7 +35,7 @@ const AboutMe = () => {
           I like videogames and music(so original btw), the type of games i like
           is mainly RPGs but i also like some hack-slash or adventure games
         </p>
-        <p className="text-lg p-2">As for what kind of music i like, it</p>
+        <p className="text-lg p-2">I like several types</p>
       </div>
     </div>
   );

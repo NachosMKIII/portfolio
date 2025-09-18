@@ -69,11 +69,20 @@ const Projects = () => {
           </p>
           <h1 className="p-2 pt-3 text-xl">Features: </h1>
           <p className="p-2 text-lg">
-            You can play songs
-            <br></br>
-            There is a player UI for you to control the track you are playing
-            <br></br>
-            You can create custom playlists that are stored locally
+            <ul>
+              <li className=" mt-1"> • You can play songs </li>
+              <li className=" mt-1">
+                • There is a player UI for you to control the track you are
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                playing
+              </li>
+              <li className=" mt-1">
+                • You can create custom playlists that are stored and managed
+                &nbsp;&nbsp; locally
+              </li>
+
+              <li className=" mt-1"> • The UX feels good</li>
+            </ul>
           </p>
         </div>
       </div>
