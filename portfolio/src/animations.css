@@ -8,7 +8,7 @@
   letter-spacing: 5px;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: #ffffff85;
   background-repeat: no-repeat;
   background-size: 80%;
   animation: shine 4s linear infinite;

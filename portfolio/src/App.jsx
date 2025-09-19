@@ -1,4 +1,3 @@
-//App.jsx
 import React from "react";
 import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
@@ -16,10 +15,11 @@ const App = () => {
 
   return (
     <div
-      className="bg-gray-950 h-screen overflow-y-auto overflow-x-hidden w-screen bg-center bg-cover bg-no-repeat custom-scrollbar"
+      className="bg-gray-950 h-screen overflow-y-auto overflow-x-hidden w-screen bg-center bg-cover bg-no-repeat custom-scrollbar
+        "
       style={{
         backgroundImage: `url('/bg2.png')`,
-        filter: "",
+        filter: "saturate(0.9) contrast(1.05)",
       }}
     >
       <div className="w-full flex items-center justify-center">

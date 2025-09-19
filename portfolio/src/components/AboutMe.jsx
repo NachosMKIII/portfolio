@@ -35,7 +35,13 @@ const AboutMe = () => {
           I like videogames and music(so original btw), the type of games i like
           is mainly RPGs but i also like some hack-slash or adventure games
         </p>
-        <p className="text-lg p-2">I like several types</p>
+        <p className="text-lg p-2">
+          I like music a lot, ranging from soothing styles like dreampop and
+          antifolk to more intense genres like heavy metal and breakcore. Aside
+          from these ones i mentioned, i like alt hip hop, alt rock, garage
+          rock, pop-funk, blues rock and more. (are you actually still reading
+          this?)";
+        </p>
       </div>
     </div>
   );

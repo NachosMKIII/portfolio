@@ -25,17 +25,22 @@ const Albums = () => {
 
   return (
     <div className=" w-[50vw]">
-      <h1
-        className={`ml-12 mt-5 text-xl rounded-full bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer
-         ${
-           isExpanded
-             ? "w-125"
-             : "opacity-70 w-[18ch] whitespace-nowrap overflow-hidden"
-         }`}
-        onClick={() => setIsExpanded(!isExpanded)}
-      >
-        Albums i really like (from bands/artists i really like)
-      </h1>
+      {isExpanded ? (
+        <h1
+          className="ml-12 mt-5 w-125 text-xl rounded-full bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer"
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
+          Albums i really like (from bands/artists i really like)
+        </h1>
+      ) : (
+        <h1
+          className="ml-12 mt-5  text-xl rounded-full bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer
+        opacity-70 w-54 whitespace-nowrap overflow-hidden"
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
+          Albums i really like
+        </h1>
+      )}
       <div
         className={`flex gap-4 ml-2 w-[49vw] mt-4 ${
           isExpanded ? null : "hidden hide-scrollbar"
@@ -187,6 +192,17 @@ const Albums = () => {
           >
             <img
               src="/imperfect-hatred.jpg"
+              className="w-52 mt-4 h-52 cursor-pointer"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 mb-2"
+          >
+            <img
+              src="/madvillainy.jpg"
               className="w-52 mt-4 h-52 cursor-pointer"
             />
           </a>
