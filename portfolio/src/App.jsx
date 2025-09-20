@@ -15,12 +15,12 @@ const App = () => {
 
   return (
     <>
-      {/* <div className="eerie-filter"></div>
+      {/*} <div className="eerie-filter"></div>
       <div className="scanlines"></div>
       <div className="vignette"></div>
       <div className="color-distortion"></div> */}
       <div
-        className="bg-gray-950 h-screen overflow-y-auto overflow-x-hidden w-screen bg-center bg-cover bg-no-repeat custom-scrollbar
+        className="bg-neutral-700 h-screen overflow-y-auto overflow-x-hidden w-screen bg-center bg-cover bg-no-repeat custom-scrollbar
       relative"
         style={{
           backgroundImage: `url('/bg2.png')`,

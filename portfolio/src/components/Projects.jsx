@@ -21,13 +21,13 @@ const Projects = () => {
   return (
     <div className="w-[50vw] flex">
       <div
-        className={`bg-neutral-900 projects ml-12 mt-20 ${
+        className={`bg-gradient-to-b from-neutral-950 to-neutral-800 projects ml-12 mt-20 ${
           isExpanded ? "w-130 h-300" : "w-35 h-14"
         } overflow-hidden transition-all transition-discrete duration-700 bold text-neutral-200
         `}
       >
         <h1
-          className="bg-neutral-950 pl-3 pt-2
+          className="bg-neutral-900/50 pl-3 pt-2
            h-14 mb-0 cursor-pointer text-3xl"
           onClick={toggleExpand}
         >
