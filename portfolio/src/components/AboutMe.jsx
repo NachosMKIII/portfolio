@@ -10,14 +10,14 @@ const AboutMe = () => {
   return (
     <div className="w-[50vw] flex">
       <div
-        className={`bg-neutral-900 ml-12 mt-20 rounded ${
+        className={`bg-neutral-900 ml-12 mt-20 ${
           isExpanded
             ? "w-100 h-200 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]"
             : "w-40 h-14"
         } overflow-hidden transition-all transition-discrete duration-700 bold text-neutral-200`}
       >
         <h1
-          className="bg-neutral-950 pl-3 text-3xl pt-2 h-14 rounded cursor-pointer"
+          className="bg-neutral-950 pl-3 text-3xl pt-2 h-14 cursor-pointer"
           onClick={toggleExpand}
         >
           About Me

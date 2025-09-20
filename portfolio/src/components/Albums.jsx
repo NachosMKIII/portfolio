@@ -27,14 +27,14 @@ const Albums = () => {
     <div className=" w-[50vw]">
       {isExpanded ? (
         <h1
-          className="ml-12 mt-5 w-125 text-xl rounded-full bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer"
+          className="ml-12 mt-5 w-125 text-xl bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer"
           onClick={() => setIsExpanded(!isExpanded)}
         >
           Albums i really like (from bands/artists i really like)
         </h1>
       ) : (
         <h1
-          className="ml-12 mt-5  text-xl rounded-full bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer
+          className="ml-12 mt-5  text-xl bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer
         opacity-70 w-54 whitespace-nowrap overflow-hidden"
           onClick={() => setIsExpanded(!isExpanded)}
         >

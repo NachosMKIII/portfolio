@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 import Games from "./components/Games";
 import Albums from "./components/Albums";
 
-const App = () => {
+const App2 = () => {
   const scrollbarConfig = {
     trackColor: "#0a0a0a",
     thumbColor: "#171717",
@@ -64,4 +64,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App2;
