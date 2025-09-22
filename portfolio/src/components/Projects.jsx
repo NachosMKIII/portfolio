@@ -21,9 +21,10 @@ const Projects = () => {
   return (
     <div className="w-[50vw] z-10 flex">
       <div
-        className={`bg-gradient-to-b from-neutral-950 to-neutral-800 projects ml-12 mt-20 ${
-          isExpanded ? "w-130 h-300" : "w-35 h-14"
-        } overflow-hidden transition-all transition-discrete duration-700 bold text-neutral-200
+        className={`bg-gradient-to-b from-neutral-950 to-neutral-800 projects ml-12 mt-20
+          info-container ${
+            isExpanded ? "w-130 h-300" : "w-35 h-14"
+          } overflow-hidden transition-all transition-discrete duration-700 bold text-neutral-200
         `}
       >
         <h1

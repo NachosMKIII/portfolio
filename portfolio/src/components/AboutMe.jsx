@@ -10,7 +10,7 @@ const AboutMe = () => {
   return (
     <div className="w-[50vw] z-10 flex">
       <div
-        className={`bg-gradient-to-b from-neutral-950 to-neutral-800 ml-12 mt-20 ${
+        className={`bg-gradient-to-b info-container from-neutral-950 to-neutral-800 ml-12 mt-20 ${
           isExpanded
             ? "w-100 h-200 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]"
             : "w-40 h-14"

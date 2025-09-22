@@ -21,10 +21,9 @@ const App = () => {
       <div className="vignette"></div>
       <div className="color-distortion"></div> */}
       <div
-        className="absolute inset-0 z-1 h-screen w-screen bg-center bg-cover bg-no-repeat"
+        className="absolute main-background inset-0 z-1 h-screen w-screen bg-center bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url('/bg2.png')`,
-          filter: "saturate(0.8) contrast(1.5)",
+          filter: "",
         }}
       ></div>
       <div
