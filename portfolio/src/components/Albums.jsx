@@ -24,7 +24,7 @@ const Albums = () => {
   };
 
   return (
-    <div className=" w-[50vw]">
+    <div className=" w-[50vw] z-10">
       {isExpanded ? (
         <h1
           className="ml-12 mt-5 w-125 text-xl bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer"

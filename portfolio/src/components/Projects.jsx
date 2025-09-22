@@ -19,7 +19,7 @@ const Projects = () => {
   }, [slides.length]);
 
   return (
-    <div className="w-[50vw] flex">
+    <div className="w-[50vw] z-10 flex">
       <div
         className={`bg-gradient-to-b from-neutral-950 to-neutral-800 projects ml-12 mt-20 ${
           isExpanded ? "w-130 h-300" : "w-35 h-14"

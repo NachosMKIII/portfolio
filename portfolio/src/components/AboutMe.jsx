@@ -8,7 +8,7 @@ const AboutMe = () => {
   }
 
   return (
-    <div className="w-[50vw] flex">
+    <div className="w-[50vw] z-10 flex">
       <div
         className={`bg-gradient-to-b from-neutral-950 to-neutral-800 ml-12 mt-20 ${
           isExpanded

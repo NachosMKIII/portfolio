@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Games from "./components/Games";
 import Albums from "./components/Albums";
+import AudioIcon from "./components/audioIcon";
 
 const App = () => {
   const scrollbarConfig = {
@@ -14,21 +15,25 @@ const App = () => {
   };
 
   return (
-    <>
-      {/*} <div className="eerie-filter"></div>
+    <div className="relative w-screen h-screen">
+      {/* <div className="eerie-filter"></div>
       <div className="scanlines"></div>
       <div className="vignette"></div>
       <div className="color-distortion"></div> */}
       <div
-        className="bg-neutral-700 h-screen overflow-y-auto overflow-x-hidden w-screen bg-center bg-cover bg-no-repeat custom-scrollbar
-      relative"
+        className="absolute inset-0 z-1 h-screen w-screen bg-center bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url('/bg2.png')`,
-          filter: "saturate(0.9) contrast(1.05)",
+          filter: "saturate(0.8) contrast(1.5)",
         }}
+      ></div>
+      <div
+        className=" z-2 h-screen overflow-y-auto overflow-x-hidden w-screen custom-scrollbar
+      relative"
       >
         <div className="w-full flex items-center justify-center">
           <Navbar />
+          <AudioIcon />
         </div>
         <div className="flex h-full">
           <div>
@@ -60,7 +65,7 @@ const App = () => {
 `}
         </style>
       </div>
-    </>
+    </div>
   );
 };
 
