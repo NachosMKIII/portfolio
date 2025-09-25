@@ -8,20 +8,11 @@ const AboutMe = () => {
   }
 
   return (
-    <div className="w-[50vw] z-10 flex">
+    <div className="z-10 flex">
       <div
-        className={`bg-gradient-to-b info-container from-neutral-950 to-neutral-800 ml-12 mt-20 ${
-          isExpanded
-            ? "w-100 h-200 [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]"
-            : "w-40 h-14"
-        } overflow-hidden transition-all transition-discrete duration-700 bold text-neutral-200`}
+        className={` info-container mt-10 overflow-y-auto custom-scrollbar transition-all transition-discrete duration-700 bold text-neutral-200`}
       >
-        <h1
-          className="bg-neutral-900/50 pl-3 text-3xl pt-2 h-14 cursor-pointer"
-          onClick={toggleExpand}
-        >
-          About Me
-        </h1>
+        <h1 className=" pl-3 text-3xl pt-2 h-14">About Me</h1>
 
         <p className="p-2 pt-3 mb-3 text-lg">
           I'm a junior software developer from Brazil, i'm currently in my last
@@ -40,7 +31,7 @@ const AboutMe = () => {
           antifolk to more intense genres like heavy metal and breakcore. Aside
           from these ones i mentioned, i like alt hip hop, alt rock, garage
           rock, pop-funk, blues rock and more. (are you actually still reading
-          this?)";
+          this?)
         </p>
       </div>
     </div>

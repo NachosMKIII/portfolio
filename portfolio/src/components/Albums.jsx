@@ -24,38 +24,12 @@ const Albums = () => {
   };
 
   return (
-    <div className=" w-[50vw] z-10">
-      {isExpanded ? (
-        <h1
-          className="ml-12 mt-5 w-125 text-xl bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer"
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          Albums i really like (from bands/artists i really like)
-        </h1>
-      ) : (
-        <h1
-          className="ml-12 mt-5  text-xl bg-neutral-950 p-2 pb-3 px-6 text-neutral-200 cursor-pointer
-        opacity-70 w-54 whitespace-nowrap overflow-hidden"
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          Albums i really like
-        </h1>
-      )}
-      <div
-        className={`flex gap-4 ml-2 w-[49vw] mt-4 ${
-          isExpanded ? null : "hidden hide-scrollbar"
-        }`}
-      >
-        <button
-          onClick={() => scroll("left")}
-          className="bg-neutral-950 cursor-pointer w-10 h-10 rounded-full relative top-25"
-        >
-          <ChevronLeft className="text-neutral-200" />
-        </button>
-        <div
-          className="flex gap-4 overflow-x-auto custom-scrollbar"
-          ref={scrollRef}
-        >
+    <div className="z-10 mb-10">
+      <h1 className="mt-5 text-3xl p-2 pb-3 px-6 text-neutral-200 relative right-4">
+        Albums i really like (from bands/artists i really like) :
+      </h1>
+      <div className="flex gap-4 ml-2 w-240 mt-4">
+        <div className="flex gap-4 overflow-x-scroll custom-scrollbar">
           <a
             href="https://open.spotify.com/album/02gFZUaqAcQNtV6rmVIsN0"
             target="_blank"
@@ -207,12 +181,6 @@ const Albums = () => {
             />
           </a>
         </div>
-        <button
-          onClick={() => scroll("right")}
-          className="bg-neutral-950 cursor-pointer w-10 h-10 rounded-full relative top-25"
-        >
-          <ChevronRight className=" text-neutral-200" />
-        </button>
       </div>
       <style>
         {`

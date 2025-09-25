@@ -5,21 +5,23 @@ import Projects from "./components/Projects";
 import Games from "./components/Games";
 import Albums from "./components/Albums";
 import AudioIcon from "./components/audioIcon";
+import MainTab from "./components/MainTab";
 
 const App = () => {
   const scrollbarConfig = {
-    trackColor: "#0a0a0a",
-    thumbColor: "#171717",
-    thumbHover: "#404040",
-    thumbActive: "#404040",
+    trackColor: "#2a0004",
+    //thumbColor: "#171717",
+    thumbColor: "#5b0009",
+    thumbHover: "#84000d",
+    thumbActive: "#84000d",
   };
 
   return (
     <div className="relative w-screen h-screen">
-      {/* <div className="eerie-filter"></div>
+      {/*<div className="eerie-filter"></div>
       <div className="scanlines"></div>
       <div className="vignette"></div>
-      <div className="color-distortion"></div> */}
+      <div className="color-distortion"></div>*/}
       <div
         className="absolute main-background inset-0 z-1 h-screen w-screen bg-center bg-cover bg-no-repeat"
         style={{
@@ -32,16 +34,9 @@ const App = () => {
       >
         <div className="w-full flex items-center justify-center">
           <Navbar />
-          <AudioIcon />
         </div>
-        <div className="flex h-full">
-          <div>
-            <AboutMe />
-            <Games />
-            <Albums />
-          </div>
-          <div className="flex items-center justify-center h-[215vh] border-2 border-neutral-950"></div>
-          <Projects />
+        <div className="flex justify-center items-center">
+          <MainTab />
         </div>
         <style>
           {`
@@ -58,7 +53,7 @@ const App = () => {
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
           background: ${scrollbarConfig.thumbHover};
         }
-        .custom-scrollbar-cozy::-webkit-scrollbar-thumb:active {
+        .custom-scrollbar::-webkit-scrollbar-thumb:active {
           background: ${scrollbarConfig.thumbActive};
         };   
 `}

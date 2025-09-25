@@ -24,25 +24,14 @@ const Games = () => {
   };
 
   return (
-    <div className="w-[50vw] z-10">
+    <div className="z-10 mt-20 mb-10">
       <h1
-        className={`${isExpanded ? null : "opacity-70"} ml-12 mt-5 w-54 text-xl
-          bg-neutral-950 p-2 pb-3 px-6  text-neutral-200 cursor-pointer`}
-        onClick={() => setIsExpanded(!isExpanded)}
+        className={` mt-5 relative right-4 text-3xl
+          p-2 pb-3 px-6 text-neutral-200`}
       >
-        Games i really like
+        Games i really like:
       </h1>
-      <div
-        className={`flex gap-4 ml-2 w-[49vw] mt-4 ${
-          isExpanded ? null : "hidden hide-scrollbar"
-        }`}
-      >
-        <button
-          onClick={() => scroll("left")}
-          className="bg-neutral-950 cursor-pointer w-10 h-10 rounded-full relative top-25"
-        >
-          <ChevronLeft className="text-neutral-200" />
-        </button>
+      <div className={`flex gap-4 ml-2 w-240`}>
         <div
           className="flex gap-4 overflow-x-auto custom-scrollbar"
           ref={scrollRef}
@@ -109,12 +98,6 @@ const Games = () => {
             <img src="/dmc3.jpg" className="w-40 mt-4 h-52 cursor-pointer" />
           </a>
         </div>
-        <button
-          onClick={() => scroll("right")}
-          className="bg-neutral-950 cursor-pointer w-10 h-10 rounded-full relative top-25"
-        >
-          <ChevronRight className=" text-neutral-200" />
-        </button>
       </div>
       <style>
         {`

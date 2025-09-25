@@ -3,28 +3,59 @@
 :root {
   --cool-red: #5b0009;
   --cool-purple: #1d005b;
+  --other-red: #2a0004;
+  --brighter-red: #84000d;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
+* {
+  font-family: "Merriweather", serif;
+}
+
 .developer-name {
-  background: linear-gradient(to bottom, #0b0b0b 0%, #010101 60%);
+  background: linear-gradient(to bottom, #0b0b0b 0%, #010101 80%);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  font-family: "Merriweather", serif;
+  font-family: "Germania One", system-ui;
 }
 
 .main-background {
   background: linear-gradient(to bottom, #010101 60%, #5b0009 100%);
 }
 
-.info-container {
+/*.info-container {
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
+}*/
+
+h1 {
+  font-family: "Bebas Neue", cursive;
 }
 
-.info-container h1 {
+.main-tab {
+  background-color: #0b0b0b;
+}
+
+.main-tab h1.slop {
+  font-family: "Rubik Marker Hatch", system-ui;
+}
+
+.main-tab h1.professional {
   font-family: "Bebas Neue", cursive;
+}
+
+.main-tab .header {
+  background-color: #060606;
+}
+
+.project-name {
+  background: #010101;
+}
+
+.grid-group {
+  font-family: "Germania One", system-ui;
+  background-color: #010101;
 }
