@@ -15,21 +15,21 @@ const AboutMe = () => {
         <h1 className=" pl-3 text-3xl pt-2 h-14">About Me</h1>
 
         <p className="p-2 pt-3 mb-3 text-lg">
-          I'm a junior software developer from Brazil, i'm currently in my last
-          year of high school and i'm looking forward to getting in the tech
-          industry with a part-time job or internship, i have been studying
-          programming for over a year now and i'm very eager to learn more and
+          I'm a junior software developer from Brazil, I'm currently in my last
+          year of high school and I'm looking forward to getting in the tech
+          industry with a part-time job or internship, I have been studying
+          programming for over a year now and I'm very eager to learn more and
           grow my skills.
         </p>
         <p className="text-xl p-2">Hobbies:</p>
         <p className="text-lg p-2">
-          I like videogames and music(so original btw), the type of games i like
-          is mainly RPGs but i also like some hack-slash or adventure games
+          I like videogames and music(so original btw), the type of games I like
+          is mainly RPGs but I also like some hack-slash or adventure games
         </p>
         <p className="text-lg p-2">
           I like music a lot, ranging from soothing styles like dreampop and
           antifolk to more intense genres like heavy metal and breakcore. Aside
-          from these ones i mentioned, i like alt hip hop, alt rock, garage
+          from these ones I mentioned, I like alt hip hop, alt rock, garage
           rock, pop-funk, blues rock and more. (are you actually still reading
           this?)
         </p>

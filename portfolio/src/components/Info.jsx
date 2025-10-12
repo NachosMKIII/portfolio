@@ -1,16 +1,55 @@
 import React from "react";
+import CopyText from "../functions/CopyText";
 
 const Info = () => {
   return (
-    <div>
-      <div className="w-40">
-        <h1>Github</h1>
-        <h1>linkedIn</h1>
-        <h1>Email</h1>
-      </div>
-      <div className="flex-col items-center justify-center">
-        <img src="resume.png" className="w-60" />
-        <button>Download resume as PDF</button>
+    <div className="pb-10">
+      <div className="flex justify-between items-center">
+        <div className="text-8xl relative bottom-20 ml-2">
+          <div>
+            <a
+              href="https://github.com/NachosMKIII"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0"
+            >
+              <h1 className="inline cursor-pointer">Github</h1>
+              <img
+                src="github-logo.png"
+                className="w-20 h-20 relative bottom-3 ml-4 inline"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/ricardo-lucas-824668331/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0"
+            >
+              <h1 className="inline cursor-pointer">linkedIn</h1>
+              <img
+                src="LI-In-Bug.png"
+                className="w-20 h-20 relative bottom-3 ml-4 inline"
+              />
+            </a>
+          </div>
+          <div>
+            <CopyText text="workemailreceiver@gmail.com">
+              <h1 className="inline cursor-pointer">Email</h1>
+              <img
+                src="email-icon.png"
+                className="w-20 h-20 relative bottom-3 ml-4 inline"
+              />
+            </CopyText>
+          </div>
+        </div>
+        <div className="flex-col items-center pdf-container justify-center px-[1px] pb-2">
+          <img src="resume2.png" className="w-80" />
+          <button className="flex ml-2 justify-center items-center">
+            Download resume as PDF
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -23,7 +23,16 @@
 }
 
 .main-background {
-  background: linear-gradient(to bottom, #010101 60%, #5b0009 100%);
+  background-color: #010101;
+  background-image: repeating-linear-gradient(
+      90deg,
+      #5b0009 0 2px,
+      transparent 1px 30px
+    ),
+    repeating-linear-gradient(0deg, #5b0009 0 2px, transparent 1px 30px);
+  background-blend-mode: normal;
+  background-position: 0 0;
+  background-size: auto;
 }
 
 /*.info-container {
@@ -57,5 +66,9 @@ h1 {
 
 .grid-group {
   font-family: "Germania One", system-ui;
+  background-color: #010101;
+}
+
+.pdf-container {
   background-color: #010101;
 }

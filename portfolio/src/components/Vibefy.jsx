@@ -8,7 +8,7 @@ const Vibefy = () => {
   }
 
   return (
-    <div>
+    <div className="mb-10">
       <h1 className="p-2 pt-3 text-3xl">
         This is currently my only project(except for this portfolio);
       </h1>
@@ -17,7 +17,7 @@ const Vibefy = () => {
       </h1>
       <h1 className="p-2 pt-3 text-3xl">TL;DR: </h1>
       <p className="p-2 text-lg">
-        Spotify updated it's documentation and i'm not allowed to update the app
+        Spotify updated it's documentation and I'm not allowed to update the app
         to production mode, if you are not a technical recruiter, you can watch
         this video on youtube showing how the app works:
         <a className="underline cursor-pointer ml-1">Video</a>
@@ -39,17 +39,17 @@ const Vibefy = () => {
         It's a music player web app that uses the spotify API for authentication
         and viewing and playing songs
         <br></br>
-        It was built using NextJS(it was for making token storing safe before i
+        It was built using NextJS(it was for making token storing safe before I
         knew that the spotify documentation was updated) and therefore React, on
-        top of that i also used tailwind for easy-to-read default styling across
+        top of that I also used tailwind for easy-to-read default styling across
         all themes
       </p>
       <h1 className="p-2 pt-3 text-3xl">Context:</h1>
       <p className="p-2 text-lg">
-        This is my first "real" project, i built it to learn hands on the
+        This is my first "real" project, I built it to learn hands on the
         essentials of software development, eg: UI/UX, interacting with an
-        API/backend, third-party services, etc. Also i thought it would be the
-        perfect project considering i like music and Spotify has great
+        API/backend, third-party services, etc. Also I thought it would be the
+        perfect project considering I like music and Spotify has great
         documentation for devs
       </p>
       <h1 className="p-2 pt-3 text-3xl">Features: </h1>
@@ -61,8 +61,6 @@ const Vibefy = () => {
         <li className=" mt-1">
           • You can create custom playlists that are stored and managed locally
         </li>
-
-        <li className=" mt-1"> • The UX feels good</li>
       </p>
     </div>
   );

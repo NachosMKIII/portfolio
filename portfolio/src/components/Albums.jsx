@@ -26,7 +26,7 @@ const Albums = () => {
   return (
     <div className="z-10 mb-10">
       <h1 className="mt-5 text-3xl p-2 pb-3 px-6 text-neutral-200 relative right-4">
-        Albums i really like (from bands/artists i really like) :
+        Albums I really like (from bands/artists I really like) :
       </h1>
       <div className="flex gap-4 ml-2 w-240 mt-4">
         <div className="flex gap-4 overflow-x-scroll custom-scrollbar">

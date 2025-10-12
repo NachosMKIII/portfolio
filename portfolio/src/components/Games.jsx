@@ -29,7 +29,7 @@ const Games = () => {
         className={` mt-5 relative right-4 text-3xl
           p-2 pb-3 px-6 text-neutral-200`}
       >
-        Games i really like:
+        Games I really like:
       </h1>
       <div className={`flex gap-4 ml-2 w-240`}>
         <div
