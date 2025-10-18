@@ -5,8 +5,8 @@ const Info = () => {
   return (
     <div className="pb-10">
       <div className="flex justify-between items-center">
-        <div className="text-8xl relative bottom-20 ml-2">
-          <div>
+        <div className="text-8xl relative ml-2">
+          <div className="">
             <a
               href="https://github.com/NachosMKIII"
               target="_blank"
@@ -20,7 +20,7 @@ const Info = () => {
               />
             </a>
           </div>
-          <div>
+          <div className="mt-10 mb-10">
             <a
               href="https://www.linkedin.com/in/ricardo-lucas-824668331/"
               target="_blank"
@@ -44,12 +44,14 @@ const Info = () => {
             </CopyText>
           </div>
         </div>
-        <div className="flex-col items-center pdf-container justify-center px-[1px] pb-2">
-          <img src="resume2.png" className="w-80" />
-          <button className="flex ml-2 justify-center items-center">
-            Download resume as PDF
-          </button>
-        </div>
+        <a href="/Ricardo Morais Lucas resume.pdf" download>
+          <div className="flex-col items-center pdf-container justify-center px-[1px] pb-2">
+            <img src="resume2.png" className="w-70" />
+            <button className="flex ml-2 pt-2 cursor-pointer justify-center font-extrabold items-center">
+              Download resume as PDF
+            </button>
+          </div>
+        </a>
       </div>
     </div>
   );

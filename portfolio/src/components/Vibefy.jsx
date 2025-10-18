@@ -39,7 +39,7 @@ const Vibefy = () => {
         It's a music player web app that uses the spotify API for authentication
         and viewing and playing songs
         <br></br>
-        It was built using NextJS(it was for making token storing safe before I
+        It was built using NextJS( it was for making token storing safe before I
         knew that the spotify documentation was updated) and therefore React, on
         top of that I also used tailwind for easy-to-read default styling across
         all themes

@@ -45,7 +45,11 @@ h1 {
 }
 
 .main-tab {
-  background-color: #0b0b0b;
+  background-color: #0c0c0c;
+  border-color: #080808;
+  border-bottom-width: 10px;
+  border-top-width: 10px;
+  border-left-width: 10px;
 }
 
 .main-tab h1.slop {

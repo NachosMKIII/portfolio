@@ -28,16 +28,16 @@ const MainTab = () => {
       </div>
       {selectedTab === "personal" && (
         <div
-          className="h-133 max-h-133 overflow-y-scroll custom-scrollbar oveflow-x-hidden
-      [mask-image:linear-gradient(to_bottom,black_90%,transparent_100%)]"
+          className="h-138 max-h-138 overflow-y-scroll custom-scrollbar oveflow-x-hidden
+      [mask-image:linear-gradient(to_bottom,black_95%,transparent_100%)]"
         >
           <PersonalSlop />
         </div>
       )}
       {selectedTab === "professional" && (
         <div
-          className="h-133 max-h-133 overflow-y-scroll custom-scrollbar
-      [mask-image:linear-gradient(to_bottom,black_90%,transparent_100%)]
+          className="h-138 max-h-138 overflow-y-scroll custom-scrollbar
+      [mask-image:linear-gradient(to_bottom,black_95%,transparent_100%)]
       overflow-x-hidden"
         >
           <Professional />

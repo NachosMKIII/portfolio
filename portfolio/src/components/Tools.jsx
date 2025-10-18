@@ -3,10 +3,10 @@ import React from "react";
 const Tools = () => {
   return (
     <div>
-      <div className="flex flex-wrap gap-5 mt-2">
+      <div className="flex ml-[6px] flex-wrap gap-5 mt-2">
         {/* JavaScript tools */}
-        <div className="bg-neutral-800 w-[480px] pb-8 rounded">
-          <p className="text-3xl grid-group w-[483px] relative right-[2px] tracking-wide mb-5 rounded-t flex items-center justify-center">
+        <div className="bg-neutral-800 w-[470px] pb-8 rounded">
+          <p className="text-3xl grid-group w-[473px] relative right-[2px] tracking-wide mb-5 rounded-t flex items-center justify-center">
             JavaScript
           </p>
 
@@ -44,8 +44,8 @@ const Tools = () => {
           </div>
         </div>
         {/* basic tools */}
-        <div className="bg-neutral-800 w-[480px] pb-8 rounded">
-          <p className="text-3xl grid-group w-[483px] relative right-[2px] tracking-wide mb-5 rounded-t flex items-center justify-center">
+        <div className="bg-neutral-800 w-[470px] pb-8 rounded">
+          <p className="text-3xl grid-group w-[473px] relative right-[2px] tracking-wide mb-5 rounded-t flex items-center justify-center">
             Basics of web development
           </p>
           <div className="flex justify-center items-center gap-5">
