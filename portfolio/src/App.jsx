@@ -30,7 +30,7 @@ const App = () => {
       ></div>
       <div
         className=" z-2 h-screen overflow-y-auto overflow-x-hidden w-screen custom-scrollbar
-      relative"
+      absolute inset-0"
       >
         <div className="w-full flex items-center justify-center">
           <Navbar />

@@ -7,7 +7,7 @@ const MainTab = () => {
   const [selectedTab, setSelectedTab] = useState("professional");
 
   return (
-    <div className="main-tab w-250 h-160 mt-4 max-h-200 bg-neutral-800 text-neutral-200">
+    <div className="main-tab w-250 h-165 mt-4 max-h-165 bg-neutral-800 text-neutral-200">
       <div className="flex justify-center items-center header py-4 bg-neutral-900 gap-60">
         <h1
           className={`cursor-pointer text-3xl tracking-wider slop ${

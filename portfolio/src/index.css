@@ -23,6 +23,7 @@
 }
 
 .main-background {
+  position: relative;
   background-color: #010101;
   background-image: repeating-linear-gradient(
       90deg,
@@ -33,6 +34,17 @@
   background-blend-mode: normal;
   background-position: 0 0;
   background-size: auto;
+  z-index: 0;
+}
+
+.main-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit; /* copies the grid */
+  filter: blur(6px) brightness(1.4);
+  opacity: 0.5;
+  z-index: -1;
 }
 
 /*.info-container {
