@@ -18,7 +18,7 @@ const Vibefy = () => {
   return (
     <div className="">
       <div className="flex flex-col items-center justify-center mb-2">
-        <img src={slides[index]} className="rounded-t w-[781px] " />
+        <img src={slides[index]} className="rounded-t w-[780px] " />
         <h1 className="text-6xl w-[781px] px-2 py-2  project-name relative rounded-b">
           Vibefy
         </h1>
