@@ -4,7 +4,6 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Games from "./components/Games";
 import Albums from "./components/Albums";
-import AudioIcon from "./components/audioIcon";
 import MainTab from "./components/MainTab";
 
 const App = () => {
