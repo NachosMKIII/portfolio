@@ -17,10 +17,10 @@ const App = () => {
 
   return (
     <div className="relative w-screen h-screen">
-      {/*<div className="eerie-filter"></div>
-      <div className="scanlines"></div>
+      <div className="eerie-filter"></div>
+      {/*<div className="scanlines"></div>*/}
       <div className="vignette"></div>
-      <div className="color-distortion"></div>*/}
+      <div className="color-distortion"></div>
       <div
         className="absolute main-background inset-0 z-1 h-screen w-screen bg-center bg-cover bg-no-repeat"
         style={{

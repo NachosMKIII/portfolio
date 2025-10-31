@@ -30,8 +30,8 @@ const AboutMe = () => {
           I like music a lot, ranging from soothing styles like dreampop and
           antifolk to more intense genres like heavy metal and breakcore. Aside
           from these ones I mentioned, I like alt hip hop, alt rock, garage
-          rock, pop-funk, blues rock and more. (are you actually still reading
-          this?)
+          rock, pop-funk, blues rock and more (are you actually still reading
+          this?). I also like cartoons and anime (kinda)
         </p>
       </div>
     </div>
