@@ -15,11 +15,10 @@ const AboutMe = () => {
         <h1 className=" pl-3 text-3xl pt-2 h-14">About Me</h1>
 
         <p className="p-2 pt-3 mb-3 text-lg">
-          I'm a junior software developer from Brazil, I'm currently in my last
-          year of high school and I'm looking forward to getting in the tech
-          industry with a part-time job or internship, I have been studying
-          programming for over a year now and I'm very eager to learn more and
-          grow my skills.
+          I'm a junior software developer from Brazil, I just finished high
+          school and I'm looking forward to getting in the tech industry with a
+          part-time job or internship, I have been studying programming for over
+          a year now and I'm very eager to learn more and grow my skills.
         </p>
         <p className="text-xl p-2">Hobbies:</p>
         <p className="text-lg p-2">
