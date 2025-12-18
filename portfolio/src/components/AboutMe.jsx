@@ -17,8 +17,8 @@ const AboutMe = () => {
         <p className="p-2 pt-3 mb-3 text-lg">
           I'm a junior software developer from Brazil, I just finished high
           school and I'm looking forward to getting in the tech industry with a
-          part-time job or internship, I have been studying programming for over
-          a year now and I'm very eager to learn more and grow my skills.
+          internship or full on job, I have been studying programming for over a
+          year now and I'm very eager to learn more and grow my skills.
         </p>
         <p className="text-xl p-2">Hobbies:</p>
         <p className="text-lg p-2">
