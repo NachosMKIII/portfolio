@@ -79,7 +79,7 @@ const Games = () => {
             />
           </a>
           <a
-            href="https://en.wikipedia.org/wiki/File:Ultrakill_cover.png"
+            href="https://en.wikipedia.org/wiki/Ultrakill"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-shrink-0 mb-2"
