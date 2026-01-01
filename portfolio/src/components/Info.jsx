@@ -44,9 +44,9 @@ const Info = () => {
             </CopyText>
           </div>
         </div>
-        <a href="/Ricardo Morais Lucas resume.pdf" download>
+        <a href="/resume.pdf" download>
           <div className="flex-col items-center pdf-container justify-center px-[1px] pb-2">
-            <img src="resume2.png" className="w-70" />
+            <img src="resume.png" className="w-70" />
             <button className="flex ml-2 pt-2 cursor-pointer justify-center font-extrabold items-center">
               Download resume as PDF
             </button>
