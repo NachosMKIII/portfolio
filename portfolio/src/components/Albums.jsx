@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Albums = () => {
   const scrollRef = useRef(null);
@@ -23,10 +24,12 @@ const Albums = () => {
     }
   };
 
+  const { t } = useTranslation("Albums");
+
   return (
     <div className="z-10 mb-10">
       <h1 className="mt-5 text-3xl p-2 pb-3 px-6 text-neutral-200 relative right-4">
-        Albums I really like (from bands/artists I really like) :
+        {t("h1-1")}
       </h1>
       <div className="flex gap-4 ml-2 w-240 mt-4">
         <div className="flex gap-4 overflow-x-scroll custom-scrollbar">

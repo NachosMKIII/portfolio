@@ -2,28 +2,30 @@ import React, { useState } from "react";
 import PersonalSlop from "./PersonalSlop";
 import Projects from "./Projects";
 import Professional from "./Professional";
+import { useTranslation } from "react-i18next";
 
 const MainTab = () => {
   const [selectedTab, setSelectedTab] = useState("professional");
+  const { t } = useTranslation("MainTab");
 
   return (
     <div className="main-tab w-250 h-165 mt-4 max-h-165 bg-neutral-800 text-neutral-200">
       <div className="flex justify-center items-center header py-4 bg-neutral-900 gap-60">
         <h1
-          className={`cursor-pointer text-3xl tracking-wider slop ${
+          className={`cursor-pointer w-[300px] relative left-10 text-3xl tracking-wider slop ${
             selectedTab === "personal" ? "underline" : null
           }`}
           onClick={() => setSelectedTab("personal")}
         >
-          Personal slop{" "}
+          {t("h1-1")}{" "}
         </h1>
         <h1
-          className={`cursor-pointer text-3xl tracking-wider professional ${
+          className={`cursor-pointer w-[300px] relative left-20 py-4 text-3xl tracking-wider professional ${
             selectedTab === "professional" ? "underline" : null
           }`}
           onClick={() => setSelectedTab("professional")}
         >
-          Professional
+          {t("h1-2")}
         </h1>
       </div>
       {selectedTab === "personal" && (

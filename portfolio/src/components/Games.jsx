@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Games = () => {
   const scrollRef = useRef(null);
@@ -23,13 +24,15 @@ const Games = () => {
     }
   };
 
+  const { t } = useTranslation("Games");
+
   return (
     <div className="z-10 mt-20 mb-10">
       <h1
         className={` mt-5 relative right-4 text-3xl
           p-2 pb-3 px-6 text-neutral-200`}
       >
-        Games I really like:
+        {t("h1-1")}
       </h1>
       <div className={`flex gap-4 ml-2 w-240`}>
         <div
