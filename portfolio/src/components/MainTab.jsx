@@ -12,7 +12,7 @@ const MainTab = () => {
     <div className="main-tab w-250 h-165 mt-4 max-h-165 bg-neutral-800 text-neutral-200">
       <div className="flex justify-center items-center header py-4 bg-neutral-900 gap-60">
         <h1
-          className={`cursor-pointer w-[300px] relative left-10 text-3xl tracking-wider slop ${
+          className={`cursor-pointer text-3xl w-[300px] relative left-10 tracking-wider slop ${
             selectedTab === "personal" ? "underline" : null
           }`}
           onClick={() => setSelectedTab("personal")}
@@ -20,7 +20,7 @@ const MainTab = () => {
           {t("h1-1")}{" "}
         </h1>
         <h1
-          className={`cursor-pointer w-[300px] relative left-20 py-4 text-3xl tracking-wider professional ${
+          className={`cursor-pointer py-4 text-3xl w-[300px] relative left-20 tracking-wider professional ${
             selectedTab === "professional" ? "underline" : null
           }`}
           onClick={() => setSelectedTab("professional")}

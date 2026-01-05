@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import Projects from "./Projects";
 import Tools from "./Tools";
 import Info from "./Info";
+import { useTranslation } from "react-i18next";
 
 const Professional = () => {
   const [selectedTab, setSelectedTab] = useState("projects");
+  const { t } = useTranslation("Professional");
 
   return (
     <div>
@@ -15,7 +17,7 @@ const Professional = () => {
            ${selectedTab === "projects" ? "underline" : null}`}
           onClick={() => setSelectedTab("projects")}
         >
-          Projects
+          {t("h1-1")}
         </h1>
         <h1
           className={`px-3 pt-2 relative left-10
@@ -23,7 +25,7 @@ const Professional = () => {
            ${selectedTab === "tools" ? "underline" : null}`}
           onClick={() => setSelectedTab("tools")}
         >
-          Tools i use
+          {t("h1-2")}
         </h1>
         <h1
           className={`px-3 pt-2 relative left-10
@@ -31,7 +33,7 @@ const Professional = () => {
            ${selectedTab === "info" ? "underline" : null}`}
           onClick={() => setSelectedTab("info")}
         >
-          Resume and contact
+          {t("h1-3")}
         </h1>
       </div>
       {selectedTab === "projects" && <Projects />}
