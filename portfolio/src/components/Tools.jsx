@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Tools = () => {
+  const { t } = useTranslation("Tools");
+
   return (
     <div>
       <div className="flex ml-[6px] flex-wrap gap-5 mt-2">
@@ -46,7 +49,7 @@ const Tools = () => {
         {/* basic tools */}
         <div className="bg-neutral-800 w-[470px] pb-8 rounded">
           <p className="text-3xl grid-group w-[473px] relative right-[2px] tracking-wide mb-5 rounded-t flex items-center justify-center">
-            Basics of web development
+            {t("p-1")}
           </p>
           <div className="flex justify-center items-center gap-5">
             <div>
