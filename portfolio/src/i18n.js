@@ -7,6 +7,7 @@ import GamesPt from "./locales/pt/games.json";
 import AlbumsPt from "./locales/pt/albums.json";
 import MainTabPt from "./locales/pt/mainTab.json";
 import ProfessionalPt from "./locales/pt/professional.json";
+import VibefyPt from "./locales/pt/vibefy.json";
 //PT assets
 import MeSamariePt from "/pt/me-samarie.png";
 //EN
@@ -15,6 +16,7 @@ import GamesEn from "./locales/en/games.json";
 import AlbumsEn from "./locales/en/albums.json";
 import MainTabEn from "./locales/en/mainTab.json";
 import ProfessionalEn from "./locales/en/professional.json";
+import VibefyEn from "./locales/en/vibefy.json";
 //EN assets
 import MeSamarieEn from "/en/me-samarie.jpg";
 
@@ -30,6 +32,7 @@ i18n
         MeSamarie: MeSamarieEn,
         MainTab: MainTabEn,
         Professional: ProfessionalEn,
+        Vibefy: VibefyEn,
       },
       pt: {
         AboutMe: AboutMePt,
@@ -38,6 +41,7 @@ i18n
         MeSamarie: MeSamariePt,
         MainTab: MainTabPt,
         Professional: ProfessionalPt,
+        Vibefy: VibefyPt,
       },
     },
     fallbackLng: "en",

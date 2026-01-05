@@ -1,0 +1,19 @@
+{
+  "h1-1": "Este é atualmente meu único projeto(exceto por este website)",
+  "h1-2": "Este é um web aplicativo de música usando a API do Spotify",
+  "TL; DR": "Resumo",
+  "p-1": "A documentação do Spotify foi atualizada o que fez com que eu não pudesse lançar o app em modo de produção. Se você não é um recrutador técnico você pode assistir este vídeo no Youtube para ver o projeto em ação:",
+  "a-1": "Vídeo",
+  "p-2-1": "Se você é um recrutador técnico e tem uma conta premium no Spotify, você \"pode\" (embora eu não recomende) testar o projeto por si mesmo clonando do",
+  "a-2": "Github",
+  "p-2-2": "Eu não recomendo porque até mesmo antes você precisaria fazer um trabalho manual irritante e agora o Spotify não permite que você faça login com localhost então você precisa ainda por cima usar uma ferramenta de proxy reverso como o Ngrok. Eu recomendo assistir o vídeo indicado",
+  "h1-3": "Sobre o projeto:",
+  "p-3-1": "É um aplicativo de música usando a API do Spotify para login e para tocar músicas, com vários temas de UI diferentes de acordo com o tipo de música que você quer escutar",
+  "p-3-2": "Foi feito com NextJS(Era para fazer com que o armazenamento de tokens fosse seguro antes de eu saber que eu não poderia lançar o app >:( ) e portanto React. Eu usei tailwind para definir estilos padrão fáceis de ler",
+  "context": "contexto:",
+  "p-4": "Este é o meu primeiro projeto de \"verdade\", eu fiz ele para para aprender na prática o essencial de desenvolvimento de software, exemplos: UI/UX, interação com API/backend, serviços de terceiros, etc. Eu também achei que seria perfeito já que eu gosto de música e o Spotify tem uma ótima documentação para desenvolvedores",
+  "h1-4": "Coisas legais",
+  "li-1": "• Tem uma UI de player para tocar e controlar a música que você está escutando",
+  "li-2": "• Você pode criar e customizar playlists que são gerenciadas localmente",
+  "li-3": "• Você pode mudar o tema da UI, o que também muda as músicas recomendadas"
+}
