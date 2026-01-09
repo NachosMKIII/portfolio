@@ -9,8 +9,7 @@ import MainTabPt from "./locales/pt/mainTab.json";
 import ProfessionalPt from "./locales/pt/professional.json";
 import VibefyPt from "./locales/pt/vibefy.json";
 import ToolsPt from "./locales/pt/tools.json";
-//PT assets
-import MeSamariePt from "/pt/me-samarie.png";
+import InfoPt from "./locales/pt/info.json";
 //EN
 import AboutMeEn from "./locales/en/aboutMe.json";
 import GamesEn from "./locales/en/games.json";
@@ -19,8 +18,7 @@ import MainTabEn from "./locales/en/mainTab.json";
 import ProfessionalEn from "./locales/en/professional.json";
 import VibefyEn from "./locales/en/vibefy.json";
 import ToolsEn from "./locales/en/tools.json";
-//EN assets
-import MeSamarieEn from "/en/me-samarie.jpg";
+import InfoEn from "./locales/en/info.json";
 
 i18n
   .use(LanguageDetector)
@@ -31,21 +29,21 @@ i18n
         AboutMe: AboutMeEn,
         Games: GamesEn,
         Albums: AlbumsEn,
-        MeSamarie: MeSamarieEn,
         MainTab: MainTabEn,
         Professional: ProfessionalEn,
         Vibefy: VibefyEn,
         Tools: ToolsEn,
+        Info: InfoEn,
       },
       pt: {
         AboutMe: AboutMePt,
         Games: GamesPt,
         Albums: AlbumsPt,
-        MeSamarie: MeSamariePt,
         MainTab: MainTabPt,
         Professional: ProfessionalPt,
         Vibefy: VibefyPt,
         Tools: ToolsPt,
+        Info: InfoPt,
       },
     },
     fallbackLng: "en",

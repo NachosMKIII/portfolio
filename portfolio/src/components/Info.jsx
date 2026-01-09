@@ -1,7 +1,42 @@
 import React from "react";
 import CopyText from "../functions/CopyText";
+import { useTranslation } from "react-i18next";
+import ResumeDownloadEn from "/resume.pdf";
+import ResumeDownloadPt from "/currículo.pdf";
+import ResumeImageEn from "/resume.png";
+import ResumeImagePt from "/currículo.png";
+
+const TranslatedResume = (props) => {
+  const { i18n, t } = useTranslation("Info");
+  const resumeDownloads = {
+    en: ResumeDownloadEn,
+    pt: ResumeDownloadPt,
+  };
+  const cleanLanguage = i18n.language.split("-")[0];
+  const resumeDownload = resumeDownloads[cleanLanguage] || "/resume.pdf";
+
+  const resumeImages = {
+    en: ResumeImageEn,
+    pt: ResumeImagePt,
+  };
+
+  const resumeImage = resumeImages[cleanLanguage] || "/resume.png";
+
+  return (
+    <a href={resumeDownload} download>
+      <div className="flex-col items-center pdf-container justify-center px-[1px] pb-2">
+        <img src={resumeImage} className="w-70" />
+        <button className="flex ml-2 pt-2 cursor-pointer justify-center font-extrabold items-center">
+          {t("button")}
+        </button>
+      </div>
+    </a>
+  );
+};
 
 const Info = () => {
+  const { t } = useTranslation("Info");
+
   return (
     <div className="pb-10">
       <div className="flex justify-between items-center">
@@ -44,14 +79,7 @@ const Info = () => {
             </CopyText>
           </div>
         </div>
-        <a href="/resume.pdf" download>
-          <div className="flex-col items-center pdf-container justify-center px-[1px] pb-2">
-            <img src="resume.png" className="w-70" />
-            <button className="flex ml-2 pt-2 cursor-pointer justify-center font-extrabold items-center">
-              Download resume as PDF
-            </button>
-          </div>
-        </a>
+        <TranslatedResume />
       </div>
     </div>
   );
