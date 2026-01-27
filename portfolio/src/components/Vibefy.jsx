@@ -34,7 +34,7 @@ const Vibefy = () => {
           {t("p-1")}
           <a
             className="underline cursor-pointer ml-1"
-            href="https://www.youtube.com/watch?v=iDAVwUUYhbg"
+            href="https://www.youtube.com/watch?v=7db1H4vjcLo"
             target="_blank"
           >
             {t("a-1")}
