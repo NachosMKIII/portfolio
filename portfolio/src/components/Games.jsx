@@ -67,6 +67,7 @@ const Games = () => {
         >
           {items.map((items, index) => (
             <a
+              key={index}
               href={items.href}
               target="_blank"
               rel="noopener noreferrer"
