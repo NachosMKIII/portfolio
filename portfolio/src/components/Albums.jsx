@@ -26,6 +26,69 @@ const Albums = () => {
 
   const { t } = useTranslation("Albums");
 
+  const items = [
+    {
+      href: "https://open.spotify.com/album/02gFZUaqAcQNtV6rmVIsN0",
+      src: "/only-place.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/6EtrZFZ6FMR6fbB82oHUWi",
+      src: "/cassette-city.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/0AL7olZ75pi55q9p1eHaD8",
+      src: "/bloom.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/1CbtBQqibzdxhmpiLD7vzN",
+      src: "/hawaii-part-ii.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/4XriwpnB6fJm8OMxb7wQcV",
+      src: "/impossible-animals.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/3vwhMjwukv3LNZpQu57RWR",
+      src: "/lighght.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/0vhRTvVCv9O5orRMgFjxT1",
+      src: "/next-thing.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/1RHa1VdX6lsLbeedgsV1cb",
+      src: "/pop-food.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/4LileDrFwEUFB5UPA3AEia",
+      src: "/OWUWAYN.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/6WM1HXRTt5MBT5hOie7CGx",
+      src: "/i-hate-jazz.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/5U0MXVHm1WiAfmmwFteqUo",
+      src: "/grasp-of-the-undying.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/5XgUtV3205kTcgoSLNf8ix",
+      src: "/last-days-of-oakland.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/3uP6jwdjhpx1AbElXO6JeF",
+      src: "/hot-freaks.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/08pnia1NUFsyIWfhE9sZz1",
+      src: "/imperfect-hatred.jpg",
+    },
+    {
+      href: "https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk",
+      src: "/madvillainy.jpg",
+    },
+  ];
+
   return (
     <div className="z-10 mb-10">
       <h1 className="mt-5 text-3xl p-2 pb-3 px-6 text-neutral-200 relative right-4">
@@ -33,156 +96,20 @@ const Albums = () => {
       </h1>
       <div className="flex gap-4 ml-2 w-240 mt-4">
         <div className="flex gap-4 overflow-x-scroll custom-scrollbar">
-          <a
-            href="https://open.spotify.com/album/02gFZUaqAcQNtV6rmVIsN0"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/only-place.jpg"
-              className="w-52 mt-4 mb-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/album/6EtrZFZ6FMR6fbB82oHUWi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img src="/cassette-city.jpg" className="w-52 h-52 mb-4 mt-4" />
-          </a>
-          <a
-            href="https://open.spotify.com/album/0AL7olZ75pi55q9p1eHaD8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img src="/bloom.jpg" className="w-52 mt-4 h-52 cursor-pointer" />
-          </a>
-          <a
-            href="https://open.spotify.com/album/1CbtBQqibzdxhmpiLD7vzN"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/hawaii-part-ii.jpg"
-              className="w-52 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/album/4XriwpnB6fJm8OMxb7wQcV"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/impossible-animals.jpg"
-              className="w-52 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/album/3vwhMjwukv3LNZpQu57RWR"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img src="/lighght.jpg" className="w-52 mt-4 h-52 cursor-pointer" />
-          </a>
-          <a
-            href="https://open.spotify.com/album/0vhRTvVCv9O5orRMgFjxT1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/next-thing.jpg"
-              className="w-52 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/album/1RHa1VdX6lsLbeedgsV1cb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img src="pop-food.jpg" className="w-52 mt-4 h-52 cursor-pointer" />
-          </a>
-          <a
-            href="https://open.spotify.com/album/4LileDrFwEUFB5UPA3AEia"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img src="/OWUWAYN.jpg" className="w-52 mt-4 h-52 cursor-pointer" />
-          </a>
-          <a
-            href="https://open.spotify.com/album/6WM1HXRTt5MBT5hOie7CGx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/i-hate-jazz.jpg"
-              className="w-52 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/album/5U0MXVHm1WiAfmmwFteqUo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/grasp-of-the-undying.jpg"
-              className="w-52 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/album/5XgUtV3205kTcgoSLNf8ix"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/last-days-of-oakland.jpg"
-              className="w-52 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/album/3uP6jwdjhpx1AbElXO6JeF"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/hot-freaks.jpg"
-              className="w-52 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/album/08pnia1NUFsyIWfhE9sZz1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/imperfect-hatred.jpg"
-              className="w-52 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://open.spotify.com/album/19bQiwEKhXUBJWY6oV3KZk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/madvillainy.jpg"
-              className="w-52 mt-4 h-52 cursor-pointer"
-            />
-          </a>
+          {items.map((items, index) => (
+            <a
+              key={index}
+              href={items.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 mb-2"
+            >
+              <img
+                src={items.src}
+                className="w-52 mt-4 mb-4 h-52 cursor-pointer"
+              />
+            </a>
+          ))}
         </div>
       </div>
       <style>
