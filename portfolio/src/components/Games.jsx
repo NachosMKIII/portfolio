@@ -25,6 +25,32 @@ const Games = () => {
   };
 
   const { t } = useTranslation("Games");
+  const items = [
+    {
+      href: "https://en.wikipedia.org/wiki/Kenshi_(video_game)",
+      src: "/kenshi.jpeg",
+    },
+    {
+      href: "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim",
+      src: "/skyrim.png",
+    },
+    {
+      href: "https://en.wikipedia.org/wiki/Stardew_Valley",
+      src: "/stardew-valley.jpeg",
+    },
+    {
+      href: "https://en.wikipedia.org/wiki/Fear_%26_Hunger#Fear_&_Hunger_2:_Termina",
+      src: "/termina.jpeg",
+    },
+    {
+      href: "https://en.wikipedia.org/wiki/Ultrakill",
+      src: "/ultrakill.webp",
+    },
+    {
+      href: "https://en.wikipedia.org/wiki/Devil_May_Cry_3:_Dante%27s_Awakening",
+      src: "/dmc3.jpg",
+    },
+  ];
 
   return (
     <div className="z-10 mt-20 mb-10">
@@ -39,67 +65,19 @@ const Games = () => {
           className="flex gap-4 overflow-x-auto custom-scrollbar"
           ref={scrollRef}
         >
-          <a
-            href="https://en.wikipedia.org/wiki/Kenshi_(video_game)"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/kenshi.jpeg"
-              href="https://en.wikipedia.org/wiki/Kenshi_(video_game)"
-              className="w-40 mt-4 mb-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img src="/skyrim.png" className="w-40 h-52 mb-4 mt-4" />
-          </a>
-          <a
-            href="https://en.wikipedia.org/wiki/Stardew_Valley"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/stardew-valley.jpeg"
-              className="w-40 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://en.wikipedia.org/wiki/Fear_%26_Hunger#Fear_&_Hunger_2:_Termina"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/termina.jpeg"
-              className="w-40 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://en.wikipedia.org/wiki/Ultrakill"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img
-              src="/ultrakill.webp"
-              className="w-40 mt-4 h-52 cursor-pointer"
-            />
-          </a>
-          <a
-            href="https://en.wikipedia.org/wiki/Devil_May_Cry_3:_Dante%27s_Awakening"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 mb-2"
-          >
-            <img src="/dmc3.jpg" className="w-40 mt-4 h-52 cursor-pointer" />
-          </a>
+          {items.map((items, index) => (
+            <a
+              href={items.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 mb-2"
+            >
+              <img
+                src={items.src}
+                className="w-40 mt-4 mb-4 h-52 cursor-pointer"
+              />
+            </a>
+          ))}
         </div>
       </div>
       <style>
