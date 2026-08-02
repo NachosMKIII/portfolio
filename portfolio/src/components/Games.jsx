@@ -45,6 +45,7 @@ const Games = () => {
     {
       href: "https://en.wikipedia.org/wiki/Ultrakill",
       src: "/ultrakill.webp",
+      alt: "Ultrakill",
     },
     {
       href: "https://en.wikipedia.org/wiki/Devil_May_Cry_3:_Dante%27s_Awakening",
@@ -76,6 +77,7 @@ const Games = () => {
               <img
                 src={items.src}
                 className="w-40 mt-4 mb-4 h-52 cursor-pointer"
+                alt={items.alt ? items.alt : null}
               />
             </a>
           ))}
