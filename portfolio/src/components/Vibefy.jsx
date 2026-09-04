@@ -17,31 +17,38 @@ const Vibefy = ({ decrementProject, incrementProject, project }) => {
     setIsExpanded(!isExpanded);
   }
 
+  function handleDecrement() {
+    if (project > 0) {
+      decrementProject();
+    }
+  }
+
+  function handleIncrement() {
+    if (project < 1) {
+      incrementProject();
+    }
+  }
+
   const { t } = useTranslation("Vibefy");
 
   return (
     <div className="">
       <div className="flex flex-col items-center justify-center mb-2">
         <div className="flex items-center justify-center gap-10">
-          {project > 0 && (
-            <ChevronLeft
-              className="cursor-pointer chevron-button"
-              onClick={() => decrementProject()}
-            />
-          )}
-
+          <ChevronLeft
+            className="cursor-pointer chevron-button"
+            onClick={() => handleDecrement()}
+          />
           <div className="flex flex-col items-center justify-center ">
             <img src={slides[index]} className="rounded-t w-[780px]" />
             <h1 className="text-6xl w-[781px] px-2 py-2  project-name relative rounded-b">
               Vibefy
             </h1>
           </div>
-          {project < 1 && (
-            <ChevronRight
-              className="cursor-pointer chevron-button"
-              onClick={() => incrementProject()}
-            />
-          )}
+          <ChevronRight
+            className="cursor-pointer chevron-button"
+            onClick={() => handleIncrement()}
+          />
         </div>
       </div>
       <div className="mb-10">
