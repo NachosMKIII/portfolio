@@ -19,6 +19,7 @@ import ProfessionalEn from "./locales/en/professional.json";
 import VibefyEn from "./locales/en/vibefy.json";
 import ToolsEn from "./locales/en/tools.json";
 import InfoEn from "./locales/en/info.json";
+import TheOldMarketEn from "./locales/en/theOldMarket.json";
 
 i18n
   .use(LanguageDetector)
@@ -34,6 +35,7 @@ i18n
         Vibefy: VibefyEn,
         Tools: ToolsEn,
         Info: InfoEn,
+        TheOldMarket: TheOldMarketEn,
       },
       pt: {
         AboutMe: AboutMePt,

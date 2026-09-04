@@ -2,22 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const Vibefy = ({ decrementProject, incrementProject, project }) => {
+const TheOldMarket = ({ decrementProject, incrementProject, project }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [index, setIndex] = useState(0);
-  const slides = ["/vibefy1.png", "/vibefy2.png", "/vibefy3.png"];
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % slides.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
   function toggleExpand() {
     setIsExpanded(!isExpanded);
   }
 
-  const { t } = useTranslation("Vibefy");
+  const { t } = useTranslation("TheOldMarket");
 
   return (
     <div className="">
@@ -29,9 +21,11 @@ const Vibefy = ({ decrementProject, incrementProject, project }) => {
               onClick={() => decrementProject()}
             />
           )}
-
           <div className="flex flex-col items-center justify-center ">
-            <img src={slides[index]} className="rounded-t w-[780px]" />
+            <img
+              src={"/the-old-market/the-old-market.png"}
+              className="rounded-t w-[780px]"
+            />
             <h1 className="text-6xl w-[781px] px-2 py-2  project-name relative rounded-b">
               Vibefy
             </h1>
@@ -45,6 +39,7 @@ const Vibefy = ({ decrementProject, incrementProject, project }) => {
         </div>
       </div>
       <div className="mb-10">
+        <h1 className="p-2 pt-3 text-3xl">{t("h1-1")};</h1>
         <h1 className="p-2 pt-3 text-3xl">{t("h1-2")}</h1>
         <h1 className="p-2 pt-3 text-3xl">{t("TL; DR")} </h1>
         <p className="p-2 text-lg">
@@ -86,4 +81,4 @@ const Vibefy = ({ decrementProject, incrementProject, project }) => {
   );
 };
 
-export default Vibefy;
+export default TheOldMarket;

@@ -1,0 +1,19 @@
+{
+  "h1-1": "This is currently my only project(except for this portfolio);",
+  "h1-2": "This is a music player app using the Spotify API",
+  "TL; DR": "TL; DR:",
+  "p-1": " Spotify updated it's documentation so I'm not allowed to update the app to production mode. If you are not a technical recruiter, you can watch this video on youtube showing how the app works:",
+  "a-1": " Video",
+  "p-2-1": "If you are technical and have a premium Spotify account you \"can\" (although I do not recommend) run the project by yourself by cloning the",
+  "a-2": "Github repo",
+  "p-2-2": "I don't recommend it because even before you would have to do some annoying manual labor but now Spotify also doesn't allow localhost for redirect URI so you will also need a reverse proxy tool like Ngrok. I recommend just watching the video",
+  "h1-3": "About the project:",
+  "p-3-1": "It's a music player web app that uses the Spotify API for authentication and viewing and playing songs, with different themes according to what music you want to listen to",
+  "p-3-2": "It was built using NextJS( it was for making token storing safe before I knew that i wouldn't be able to deploy the app >:( ) and therefore React, I used tailwind for easy-to-read default styling across all themes",
+  "context": "context:",
+  "p-4": "This is my first \"real\" project, I built it to learn hands on the essentials of software development, eg: UI/UX, interacting with an  API/backend, third-party services, etc. Also I thought it would be the perfect project considering I like music and Spotify has great documentation for devs",
+  "h1-4": "Features:",
+  "li-1": "• There is a player UI for you to control the track you are playing",
+  "li-2": "• You can create custom playlists that are stored and managed locally",
+  "li-3": "• You can change the UI theme, which also changes the recommended songs"
+}

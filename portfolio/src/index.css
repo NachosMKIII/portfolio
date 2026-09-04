@@ -25,11 +25,8 @@
 .main-background {
   position: relative;
   background-color: #010101;
-  background-image: repeating-linear-gradient(
-      90deg,
-      #5b0009 0 2px,
-      transparent 1px 30px
-    ),
+  background-image:
+    repeating-linear-gradient(90deg, #5b0009 0 2px, transparent 1px 30px),
     repeating-linear-gradient(0deg, #5b0009 0 2px, transparent 1px 30px);
   background-blend-mode: normal;
   background-position: 0 0;
@@ -87,4 +84,9 @@ h1 {
 
 .pdf-container {
   background-color: #010101;
+}
+
+.chevron-button {
+  color: #1a0003;
+  background-color: #a00313;
 }
