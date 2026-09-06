@@ -34,7 +34,7 @@ const TheOldMarket = ({ decrementProject, incrementProject, project }) => {
           <div className="flex flex-col items-center justify-center ">
             <img
               src={"/the-old-market/the-old-market.png"}
-              className="rounded-t w-[780px]"
+              className="rounded-t w-[780px] h-[488px] object-cover"
             />
             <h1 className="text-6xl w-[781px] px-2 py-2  project-name relative rounded-b">
               The Old Market

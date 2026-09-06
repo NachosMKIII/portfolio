@@ -40,7 +40,10 @@ const Vibefy = ({ decrementProject, incrementProject, project }) => {
             onClick={() => handleDecrement()}
           />
           <div className="flex flex-col items-center justify-center ">
-            <img src={slides[index]} className="rounded-t w-[780px]" />
+            <img
+              src={slides[index]}
+              className="rounded-t w-[780px] h-[488px] object-cover"
+            />
             <h1 className="text-6xl w-[781px] px-2 py-2  project-name relative rounded-b">
               Vibefy
             </h1>
