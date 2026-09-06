@@ -103,6 +103,12 @@ const Tools = () => {
             Tailwind
           </h1>
         </div>
+        <div className="">
+          <img src="prisma-logo.png" className="w-30 h-30" />
+          <h1 className="flex text-xl tracking-wide items-center justify-center">
+            Prisma
+          </h1>
+        </div>
       </div>
     </div>
   );
