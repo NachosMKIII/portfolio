@@ -48,15 +48,12 @@ const TheOldMarket = ({ decrementProject, incrementProject, project }) => {
       </div>
       <div className="mb-10">
         <h1 className="p-2 pt-3 text-3xl">{t("h1-1")};</h1>
-
         <h1 className="p-2 text-3xl">{t("h1-3")}</h1>
         <p className="p-2 text-lg">
           {t("p-3-1")}
           <br></br>
           {t("p-3-2")}
         </p>
-        <h1 className="p-2 pt-3 text-3xl">{t("context:")}</h1>
-        <p className="p-2 text-lg">{t("p-4")}</p>
         <h1 className="p-2 pt-3 text-3xl">{t("h1-4")} </h1>
         <p className="p-2 text-lg">
           <li className=" mt-1">{t("li-1")} </li>

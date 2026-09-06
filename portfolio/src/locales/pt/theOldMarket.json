@@ -1,0 +1,13 @@
+{
+  "h1-1": "Um projeto demonstrativo fullstack de um website de e-commerce",
+  "h1-2": "Este projeto simula um website de comércio digitial centrado em antiguidades e réplicas, usando lógica de um comércio digital de verdade",
+  "h1-3": "Sobre o projeto:",
+  "p-3-1": "Este projeto simula um website de comércio digitial centrado em antiguidades e réplicas.",
+  "p-3-2": "Ele usa NextJS e Prisma para desenvolvimento fullstack.",
+  "h1-4": "Functionalidades:",
+  "li-1": "• Possui autenticação de email + senha, assim como autenticação fornecida através do Oauth do Github",
+  "li-2": "• Usuários possuem um inventário com todos os itens que eles compraram/têm",
+  "li-3": "• Usuários podem colocar novos itens para a venda ou colocar itens para a venda direto do inventário",
+  "li-4": "• Existem paginas de transações e atividade em que usuários podem ver suas transações(e pesquisar por elas) e atividade(itens adicionados à venda e seu estoque)",
+  "li-5": "• Ele usa transações atômicas(OOoOooOOOoOoo transações atômicas) para coisas como compras, vendas e mudanças no estoque"
+}

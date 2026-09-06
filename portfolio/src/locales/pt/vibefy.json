@@ -12,7 +12,7 @@
   "p-3-2": "Foi feito com NextJS(Era para fazer com que o armazenamento de tokens fosse seguro antes de eu saber que eu não poderia lançar o app >:( ) e portanto React. Eu usei tailwind para definir estilos padrão fáceis de ler",
   "context": "contexto:",
   "p-4": "Este é o meu primeiro projeto de \"verdade\", eu fiz ele para para aprender na prática o essencial de desenvolvimento de software, exemplos: UI/UX, interação com API/backend, serviços de terceiros, etc. Eu também achei que seria perfeito já que eu gosto de música e o Spotify tem uma ótima documentação para desenvolvedores",
-  "h1-4": "Coisas legais",
+  "h1-4": "Funcionalidades:",
   "li-1": "• Tem uma UI de player para tocar e controlar a música que você está escutando",
   "li-2": "• Você pode criar e customizar playlists que são gerenciadas localmente",
   "li-3": "• Você pode mudar o tema da UI, o que também muda as músicas recomendadas"

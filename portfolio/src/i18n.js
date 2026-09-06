@@ -20,6 +20,7 @@ import VibefyEn from "./locales/en/vibefy.json";
 import ToolsEn from "./locales/en/tools.json";
 import InfoEn from "./locales/en/info.json";
 import TheOldMarketEn from "./locales/en/theOldMarket.json";
+import TheOldMarketPt from "./locales/pt/theOldMarket.json";
 
 i18n
   .use(LanguageDetector)
@@ -46,6 +47,7 @@ i18n
         Vibefy: VibefyPt,
         Tools: ToolsPt,
         Info: InfoPt,
+        TheOldMarket: TheOldMarketPt,
       },
     },
     fallbackLng: "en",

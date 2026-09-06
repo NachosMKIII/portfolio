@@ -1,21 +1,13 @@
 {
   "h1-1": "A fullstack, mock e-commerce website",
-  "h1-2": "This project simulates an e-commerce website centered around old stuff and replicas",
-  "TL; DR": "TL; DR:",
-  "p-1": " Spotify updated it's documentation so I'm not allowed to update the app to production mode. If you are not a technical recruiter, you can watch this video on youtube showing how the app works:",
-  "a-1": " Video",
-  "p-2-1": "If you are technical and have a premium Spotify account you \"can\" (although I do not recommend) run the project by yourself by cloning the",
-  "a-2": "Github repo",
-  "p-2-2": "I don't recommend it because even before you would have to do some annoying manual labor but now Spotify also doesn't allow localhost for redirect URI so you will also need a reverse proxy tool like Ngrok. I recommend just watching the video",
+  "h1-2": "This project simulates an e-commerce website centered around antiques and replicas, using real e-commerce logic",
   "h1-3": "About the project:",
   "p-3-1": "This project simulates an e-commerce website centered around old stuff and replicas.",
   "p-3-2": "It uses NextJS and Prisma for fullstack development.",
-  "context": "context:",
-  "p-4": "This is my first \"real\" project, I built it to learn hands on the essentials of software development, eg: UI/UX, interacting with an  API/backend, third-party services, etc. Also I thought it would be the perfect project considering I like music and Spotify has great documentation for devs",
   "h1-4": "Features:",
   "li-1": "• It has email + password authentication, aswell as authentication provided via GitHub Oauth",
   "li-2": "• Users have an inventory with all the items that they bought/have",
   "li-3": "• Users can put up new items for sale or put up for sale directly from their stock",
-  "li-4": "• There are transactions and activity pages where users can see their transactions(and search through them)  and their activities(Item put up for sale and their stock)",
-  "li-5": "• It uses atomic transactions(OOoOooOOOoOoo atomic transactions) for things like sales and purchases"
+  "li-4": "• There are transactions and activity pages where users can see their transactions(and search through them) and their activities(Item put up for sale and their stock)",
+  "li-5": "• It uses atomic transactions(OOoOooOOOoOoo atomic transactions) for things like sales, purchases and stock changes"
 }
