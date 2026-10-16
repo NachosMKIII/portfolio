@@ -1,0 +1,9 @@
+"filename", "language", "Markdown", "JSON", "JavaScript", "HTML", "XML", "comment", "blank", "total"
+"c:\Developer-projects\portfolio\portfolio\README.md", "Markdown", -1, 0, 0, 0, 0, 0, -1, -2
+"c:\Developer-projects\portfolio\portfolio\eslint.config.js", "JavaScript", 0, 0, -32, 0, 0, 0, -2, -34
+"c:\Developer-projects\portfolio\portfolio\index.html", "HTML", 0, 0, 0, -25, 0, -2, -1, -28
+"c:\Developer-projects\portfolio\portfolio\package-lock.json", "JSON", 0, -3537, 0, 0, 0, 0, -1, -3538
+"c:\Developer-projects\portfolio\portfolio\package.json", "JSON", 0, -34, 0, 0, 0, 0, -1, -35
+"c:\Developer-projects\portfolio\portfolio\public\tailwind-icon.svg", "XML", 0, 0, 0, 0, -1, 0, 0, -1
+"c:\Developer-projects\portfolio\portfolio\vite.config.js", "JavaScript", 0, 0, -6, 0, 0, -1, -2, -9
+"Total", "-", -1, -3571, -38, -25, -1, -3, -8, -3647

@@ -1,0 +1,48 @@
+"filename", "language", "PostCSS", "Markdown", "JSON", "JavaScript JSX", "JavaScript", "HTML", "XML", "comment", "blank", "total"
+"c:\Developer-projects\portfolio\portfolio\README.md", "Markdown", 0, 1, 0, 0, 0, 0, 0, 0, 1, 2
+"c:\Developer-projects\portfolio\portfolio\eslint.config.js", "JavaScript", 0, 0, 0, 0, 32, 0, 0, 0, 2, 34
+"c:\Developer-projects\portfolio\portfolio\index.html", "HTML", 0, 0, 0, 0, 0, 25, 0, 2, 1, 28
+"c:\Developer-projects\portfolio\portfolio\package-lock.json", "JSON", 0, 0, 3537, 0, 0, 0, 0, 0, 1, 3538
+"c:\Developer-projects\portfolio\portfolio\package.json", "JSON", 0, 0, 34, 0, 0, 0, 0, 0, 1, 35
+"c:\Developer-projects\portfolio\portfolio\public\tailwind-icon.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 1
+"c:\Developer-projects\portfolio\portfolio\src\App.jsx", "JavaScript JSX", 0, 0, 0, 59, 0, 0, 0, 3, 4, 66
+"c:\Developer-projects\portfolio\portfolio\src\animations.css", "PostCSS", 23, 0, 0, 0, 0, 0, 0, 0, 1, 24
+"c:\Developer-projects\portfolio\portfolio\src\assets\react.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 1
+"c:\Developer-projects\portfolio\portfolio\src\components\AboutMe.jsx", "JavaScript JSX", 0, 0, 0, 23, 0, 0, 0, 0, 7, 30
+"c:\Developer-projects\portfolio\portfolio\src\components\Albums.jsx", "JavaScript JSX", 0, 0, 0, 132, 0, 0, 0, 1, 8, 141
+"c:\Developer-projects\portfolio\portfolio\src\components\AudioIcon.jsx", "JavaScript JSX", 0, 0, 0, 10, 0, 0, 0, 1, 3, 14
+"c:\Developer-projects\portfolio\portfolio\src\components\Games.jsx", "JavaScript JSX", 0, 0, 0, 104, 0, 0, 0, 1, 7, 112
+"c:\Developer-projects\portfolio\portfolio\src\components\Info.jsx", "JavaScript JSX", 0, 0, 0, 81, 0, 0, 0, 0, 8, 89
+"c:\Developer-projects\portfolio\portfolio\src\components\MainTab.jsx", "JavaScript JSX", 0, 0, 0, 49, 0, 0, 0, 0, 4, 53
+"c:\Developer-projects\portfolio\portfolio\src\components\Navbar.jsx", "JavaScript JSX", 0, 0, 0, 32, 0, 0, 0, 0, 4, 36
+"c:\Developer-projects\portfolio\portfolio\src\components\PersonalSlop.jsx", "JavaScript JSX", 0, 0, 0, 30, 0, 0, 0, 0, 5, 35
+"c:\Developer-projects\portfolio\portfolio\src\components\Professional.jsx", "JavaScript JSX", 0, 0, 0, 43, 0, 0, 0, 0, 4, 47
+"c:\Developer-projects\portfolio\portfolio\src\components\Projects.jsx", "JavaScript JSX", 0, 0, 0, 32, 0, 0, 0, 0, 5, 37
+"c:\Developer-projects\portfolio\portfolio\src\components\TheOldMarket.jsx", "JavaScript JSX", 0, 0, 0, 64, 0, 0, 0, 0, 7, 71
+"c:\Developer-projects\portfolio\portfolio\src\components\Tools.jsx", "JavaScript JSX", 0, 0, 0, 110, 0, 0, 0, 3, 5, 118
+"c:\Developer-projects\portfolio\portfolio\src\components\Vibefy.jsx", "JavaScript JSX", 0, 0, 0, 92, 0, 0, 0, 0, 8, 100
+"c:\Developer-projects\portfolio\portfolio\src\filters.css", "PostCSS", 145, 0, 0, 0, 0, 0, 0, 5, 9, 159
+"c:\Developer-projects\portfolio\portfolio\src\functions\CopyText.jsx", "JavaScript JSX", 0, 0, 0, 32, 0, 0, 0, 0, 4, 36
+"c:\Developer-projects\portfolio\portfolio\src\i18n.js", "JavaScript", 0, 0, 0, 0, 55, 0, 0, 2, 3, 60
+"c:\Developer-projects\portfolio\portfolio\src\index.css", "PostCSS", 72, 0, 0, 0, 0, 0, 0, 4, 17, 93
+"c:\Developer-projects\portfolio\portfolio\src\locales\en\aboutMe.json", "JSON", 0, 0, 6, 0, 0, 0, 0, 0, 1, 7
+"c:\Developer-projects\portfolio\portfolio\src\locales\en\albums.json", "JSON", 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\Developer-projects\portfolio\portfolio\src\locales\en\games.json", "JSON", 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\Developer-projects\portfolio\portfolio\src\locales\en\info.json", "JSON", 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\Developer-projects\portfolio\portfolio\src\locales\en\mainTab.json", "JSON", 0, 0, 4, 0, 0, 0, 0, 0, 1, 5
+"c:\Developer-projects\portfolio\portfolio\src\locales\en\professional.json", "JSON", 0, 0, 5, 0, 0, 0, 0, 0, 1, 6
+"c:\Developer-projects\portfolio\portfolio\src\locales\en\theOldMarket.json", "JSON", 0, 0, 13, 0, 0, 0, 0, 0, 1, 14
+"c:\Developer-projects\portfolio\portfolio\src\locales\en\tools.json", "JSON", 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\Developer-projects\portfolio\portfolio\src\locales\en\vibefy.json", "JSON", 0, 0, 19, 0, 0, 0, 0, 0, 1, 20
+"c:\Developer-projects\portfolio\portfolio\src\locales\pt\aboutMe.json", "JSON", 0, 0, 6, 0, 0, 0, 0, 0, 1, 7
+"c:\Developer-projects\portfolio\portfolio\src\locales\pt\albums.json", "JSON", 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\Developer-projects\portfolio\portfolio\src\locales\pt\games.json", "JSON", 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\Developer-projects\portfolio\portfolio\src\locales\pt\info.json", "JSON", 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\Developer-projects\portfolio\portfolio\src\locales\pt\mainTab.json", "JSON", 0, 0, 4, 0, 0, 0, 0, 0, 1, 5
+"c:\Developer-projects\portfolio\portfolio\src\locales\pt\professional.json", "JSON", 0, 0, 5, 0, 0, 0, 0, 0, 1, 6
+"c:\Developer-projects\portfolio\portfolio\src\locales\pt\theOldMarket.json", "JSON", 0, 0, 13, 0, 0, 0, 0, 0, 1, 14
+"c:\Developer-projects\portfolio\portfolio\src\locales\pt\tools.json", "JSON", 0, 0, 3, 0, 0, 0, 0, 0, 1, 4
+"c:\Developer-projects\portfolio\portfolio\src\locales\pt\vibefy.json", "JSON", 0, 0, 19, 0, 0, 0, 0, 0, 1, 20
+"c:\Developer-projects\portfolio\portfolio\src\main.jsx", "JavaScript JSX", 0, 0, 0, 12, 0, 0, 0, 0, 2, 14
+"c:\Developer-projects\portfolio\portfolio\vite.config.js", "JavaScript", 0, 0, 0, 0, 6, 0, 0, 1, 2, 9
+"Total", "-", 240, 1, 3689, 905, 93, 25, 2, 23, 141, 5119
